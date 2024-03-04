@@ -15,7 +15,8 @@ test(1, 2, 3, 4, 5, 6, 7, 8, 9)
 test(1, 2, 3, 4, 5, 6, 7, 8)
 test('a', [1, 2, 3, 4, 5, 6, 7, 8, 9], {'a': 1, 'b': 2})
 
-
+assert factorial(0) == fct(0)
+assert factorial(1) == fct(1)
 assert factorial(2) == fct(2)
 assert factorial(8) == fct(8)
 assert factorial(10) == fct(10)

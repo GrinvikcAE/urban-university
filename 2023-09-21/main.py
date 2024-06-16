@@ -1,5 +1,5 @@
 
-example = 'Hello, World!'
+example = 'Топинамбур'
 
 print(example[0])
 print(example[-1])

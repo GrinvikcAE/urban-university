@@ -1,4 +1,6 @@
 name = input()
+
+print(f'len: {len(name)}')
 print(name.upper())
 print(name.lower())
 print(name.replace(' ', ''))

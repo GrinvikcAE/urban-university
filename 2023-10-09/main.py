@@ -1,24 +1,16 @@
-from math import factorial as fct
+def get_multiplied_digits(number):
+    s_number = str(number)
+    if len(s_number) == 1:
+        return number
+    first = int(s_number[0])
+    return first * get_multiplied_digits(int(s_number[1:]))
 
 
-def test(*args) -> None:
-    print(*args, sep=', ')
+result = get_multiplied_digits(40203)
+print(result)
 
+result = get_multiplied_digits(123)
+print(result)
 
-def factorial(n: int) -> int:
-    if n <= 1:
-        return 1
-    return n * factorial(n-1)
-
-
-test(1, 2, 3, 4, 5, 6, 7, 8, 9)
-test(1, 2, 3, 4, 5, 6, 7, 8)
-test('a', [1, 2, 3, 4, 5, 6, 7, 8, 9], {'a': 1, 'b': 2})
-
-assert factorial(0) == fct(0)
-assert factorial(1) == fct(1)
-assert factorial(2) == fct(2)
-assert factorial(8) == fct(8)
-assert factorial(10) == fct(10)
-
-test(factorial(5))
+result = get_multiplied_digits(4321)
+print(result)
